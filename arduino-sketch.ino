@@ -26,8 +26,10 @@ void cease() {
 }
 
 void leftTurn() {
+  //leftWheel.write(90);
+  //rightWheel.write(0); 
   leftWheel.write(90);
-  rightWheel.write(0); 
+  rightWheel.write(30);
 }
 
 void rightTurn() {
@@ -36,11 +38,10 @@ void rightTurn() {
 }
 
 void loop() {
-  forward();
   leftTurn();
-  leftTurn();
+  delay(1000);
   forward();
-  cease();
+  delay(2000);
   /*leftTurn();
   delay(1000);
   forward();
