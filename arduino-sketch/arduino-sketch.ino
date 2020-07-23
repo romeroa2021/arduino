@@ -39,7 +39,7 @@ void rightTurn() {
 
 void loop() {
   leftTurn();
-  delay(1000);
+  delay(800);
   forward();
   delay(2000);
   /*leftTurn();
