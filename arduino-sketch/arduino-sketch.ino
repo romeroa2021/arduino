@@ -37,6 +37,15 @@ void rightTurn() {
   rightWheel.write(90);
 }
 
+void howManyTurns(int j) {
+  for (int i = 0; i < j; i++) {
+    leftTurn();
+    delay(800);
+    forward();
+    delay(2000);
+  }
+}
+
 void loop() {
   leftTurn();
   delay(800);
